@@ -1,0 +1,12 @@
+# NetAPI compromised IPs: IPv4 addresses that attacked NetAPI's own honeypot
+# sensors in the last 48 hours (password guessing, exploit attempts, malware
+# delivery). First-party sensor data, not an aggregate, so it adds addresses
+# the other feeds do not carry. Regenerated hourly, CC BY 4.0.
+# https://netapi.com/compromised-ips/
+name: netapi-honeypot
+url: https://netapi.com/api2/?method=compromised&dataset_type=ip&header=0
+format: plain
+family: ipv4
+min_fetch_interval: 23h
+risk: medium
+fail_policy: use_cache
