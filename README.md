@@ -79,9 +79,9 @@ Distro guides: [Ubuntu/Debian](docs/debian-ubuntu.md) ·
 
 `/etc/nft-blocklist/config.yaml` plus one YAML per feed in `feeds.d/`
 (strictly validated — typos are errors, not surprises). Shipped defaults:
-Spamhaus DROP (v4+v6), FireHOL level1, blocklist.de, CINS Army, and ipsum
-with a ≥3-lists confidence threshold; abuse.ch C2 feeds and Tor exit nodes
-are included but disabled (aggressive feeds require an explicit
+Spamhaus DROP (v4+v6), FireHOL level1, blocklist.de, the NetAPI honeypot
+list, CINS Army, and ipsum with a ≥3-lists confidence threshold; abuse.ch C2
+feeds and Tor exit nodes are included but disabled (aggressive feeds require an explicit
 `acknowledge_risk: true`). See [configs/](configs/) — every option is
 documented in place.
 
